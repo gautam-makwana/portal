@@ -6,7 +6,7 @@ function Dashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/user")
+    fetch("https://intern-portal-backend-7dk8.onrender.com")
       .then((res) => res.json())
       .then((data) => setUser(data));
   }, []);
