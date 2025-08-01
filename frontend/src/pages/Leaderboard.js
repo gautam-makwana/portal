@@ -6,7 +6,7 @@ function Leaderboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("https://intern-portal-backend-7dk8.onrender.com")
+    fetch("https://your-service-name.onrender.com/api/user")
       .then((res) => res.json())
       .then((data) => setLeaders(data));
   }, []);
